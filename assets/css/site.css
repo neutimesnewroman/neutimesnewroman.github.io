@@ -1,162 +1,83 @@
-#navbar {
-  background-color: #ddd;
-  list-style-type: none;
-  overflow: hidden; }
+#navbar { background-color: #ddd; list-style-type: none; overflow: hidden; }
 
-#navbar .navitem:hover {
-  background-color: #bbb; }
+#navbar .navitem:hover { background-color: #bbb; }
 
-#navbar .navitem {
-  float: left;
-  text-align: center; }
+#navbar .navitem { float: left; text-align: center; }
 
-#navbar .navitem-selected:hover {
-  background-color: #444; }
+#navbar .navitem-selected:hover { background-color: #444; }
 
-.navitem a {
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  color: black; }
+.navitem a { display: block; text-align: center; padding: 14px 16px; text-decoration: none; color: black; }
 
-.navitem-selected {
-  background-color: black;
-  color: white; }
+.navitem-selected { background-color: black; color: white; }
 
-.navitem-selected a {
-  color: white; }
+.navitem-selected a { color: white; }
 
-.full-width, .video-embed-container, .video-embed, .video-thumbnail {
-  width: 100%; }
+.full-width, .video-embed-container, .video-embed, .video-thumbnail { width: 100%; }
 
-.picture-list-item {
-  margin-bottom: 2em; }
+.picture-list-item { margin-bottom: 2em; }
 
-@media only screen and (max-width: 500px) {
-  .picture-list-picture {
-    margin: 8px auto;
-    display: flex;
-    justify-content: center; } }
-@media only screen and (min-width: 501px) and (max-width: 1023px) {
-  .picture-list-picture {
-    float: left;
-    margin-right: 16px; } }
-@media only screen and (min-width: 1024px) {
-  .picture-list-picture {
-    float: left;
-    margin-right: 16px; } }
+@media only screen and (max-width: 500px) { .picture-list-picture { margin: 8px auto; display: flex; justify-content: center; } }
 
-@media only screen and (max-width: 500px) {
-  .picture-list-description h3 {
-    text-align: center; } }
+@media only screen and (min-width: 501px) and (max-width: 1023px) { .picture-list-picture { float: left; margin-right: 16px; } }
 
-.picture-list-profile-picture {
-  display: block;
-  object-fit: cover;
-  width: 250px;
-  height: 250px;
-  border-radius: 3%;
-  border: 1px solid red; }
+@media only screen and (min-width: 1024px) { .picture-list-picture { float: left; margin-right: 16px; } }
 
-.full-width, .video-embed-container, .video-embed, .video-thumbnail {
-  width: 100%; }
+@media only screen and (max-width: 500px) { .picture-list-description h3 { text-align: center; } }
 
-.issue-grid-layout {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center; }
+.picture-list-profile-picture { display: block; object-fit: cover; width: 250px; height: 250px; border-radius: 3%; border: 1px solid red; }
 
-.issue-grid-picture-container {
-  width: 300px;
-  filter: none;
-  transition: 0.4s; }
-  @media only screen and (max-width: 500px) {
-    .issue-grid-picture-container {
-      width: 200px; } }
-  @media only screen and (min-width: 501px) and (max-width: 1023px) {
-    .issue-grid-picture-container {
-      width: 250px; } }
+.full-width, .video-embed-container, .video-embed, .video-thumbnail { width: 100%; }
 
-.issue-detail-thumbnail-contents-container {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center; }
+.issue-grid-layout { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; }
 
-.issue-detail-contents, .issue-detail-thumbnail {
-  margin: 8px; }
+.issue-grid-picture-container { width: 300px; filter: none; transition: 0.4s; }
 
-.issue-detail-contents {
-  flex: 1 1 auto; }
-  .issue-detail-contents table {
-    width: 100%; }
+@media only screen and (max-width: 500px) { .issue-grid-picture-container { width: 200px; } }
 
-.issue-detail-thumbnail {
-  flex: .2 .2 300px;
-  margin: 8px; }
+@media only screen and (min-width: 501px) and (max-width: 1023px) { .issue-grid-picture-container { width: 250px; } }
 
-.articletitle a:visited {
-  color: black; }
+.issue-detail-thumbnail-contents-container { display: flex; flex-flow: row wrap; justify-content: center; }
 
-.articletitle a {
-  text-decoration: none;
-  color: black; }
+.issue-detail-contents, .issue-detail-thumbnail { margin: 8px; }
 
-.articletitle {
-  color: black; }
+.issue-detail-contents { flex: 1 1 auto; }
 
-.full-width, .video-embed-container, .video-embed, .video-thumbnail {
-  width: 100%; }
+.issue-detail-contents table { width: 100%; }
 
-.video-embed-container {
-  position: relative;
-  padding-top: 56%; }
+.issue-detail-thumbnail { flex: .2 .2 300px; margin: 8px; }
 
-.video-embed {
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0; }
+.articletitle a:visited { color: black; }
 
-.video-container {
-  margin-bottom: 8px; }
+.articletitle a { text-decoration: none; color: black; }
 
-body {
-  background-color: #444; }
+.articletitle { color: black; }
 
-#container {
-  background-color: white; }
+.full-width, .video-embed-container, .video-embed, .video-thumbnail { width: 100%; }
 
-#content {
-  padding: 10px 50px 50px 50px; }
+.video-embed-container { position: relative; padding-top: 56%; }
 
-table,
-th,
-td {
-  border: 1px solid grey;
-  border-collapse: collapse; }
+.video-embed { height: 100%; position: absolute; top: 0; left: 0; }
 
-th,
-td {
-  padding: 5px; }
+.video-container { margin-bottom: 8px; }
 
-table tr:first-child {
-  background-color: lightgray; }
+body { background-color: #444; }
 
-table tr:nth-child(even) {
-  background-color: whitesmoke; }
+#container { background-color: white; }
 
-table tr:nth-child(odd) {
-  background-color: white; }
+#content { padding: 10px 50px 50px 50px; }
 
-.embed-responsive-17by22 {
-  padding-bottom: 129.41%; }
+table, th, td { border: 1px solid grey; border-collapse: collapse; }
 
-.logo {
-  width: 30px;
-  height: 30px;
-  margin-bottom: 5px;
-  margin-top: 5px;
-  margin-left: 5px;
-  margin-right: 5px; }
+th, td { padding: 5px; }
+
+table tr:first-child { background-color: lightgray; }
+
+table tr:nth-child(even) { background-color: whitesmoke; }
+
+table tr:nth-child(odd) { background-color: white; }
+
+.embed-responsive-17by22 { padding-bottom: 129.41%; }
+
+.logo { width: 30px; height: 30px; margin-bottom: 5px; margin-top: 5px; margin-left: 5px; margin-right: 5px; }
+
+/*# sourceMappingURL=site.css.map */
