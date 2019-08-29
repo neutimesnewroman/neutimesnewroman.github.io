@@ -1,24 +1,237 @@
----
-title: Videos
----
+<html>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#666666">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<title>Videos</title>
 
-{% for vid in site.data.videos %}
+<head>
+    <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand" style="color:#FF0000">Times New Roman</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+            <ul class="nav navbar-nav">
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/staff.html">Staff</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/issues.html">Issues</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog.html">Blog</a>
+                </li>
+                
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/videos.html">Videos</a>
+                </li>
+                
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    
+                    <a href="https://twitter.com/neutnr"><img src="/assets/img/logos/twitter_logo_white.png" class="logo"></a>
+                    
+                    <a href="https://facebook.com/neutnr"><img src="/assets/img/logos/facebook_logo.png" class="logo"></a>
+                    
+                    <a href="https://instagram.com/neutnr"><img src="/assets/img/logos/instagram_logo.png" class="logo"></a>
+                    
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container" id="container">
+
+
+        <div id="content" style="padding-top:25px">
+            
   <div class="video-container">
  
-  <h2>{{vid.title}}</h2>
-  {% if forloop.index <= 4 %}
+  <h2>PB&J</h2>
+  
     <div class="video-embed-container">
-      <iframe class="video-embed" src="https://www.youtube.com/embed/{{vid.ytid}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe class="video-embed" src="https://www.youtube.com/embed/VkYEVgmZJd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
-  {% else %}
-    <a href="https://www.youtube.com/watch?v={{vid.ytid}}">
-        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/{{vid.ytid}}/sddefault.jpg">
-    </a>
-  {% endif %} 
+   
 
-  {% if vid.btsid %}
-    (<a href="https://www.youtube.com/watch?v={{vid.btsid}}">Behind the scenes</a>)
-  {% endif %}
+  
 
   </div>
-{% endfor %}
+
+  <div class="video-container">
+ 
+  <h2>The Lake in the Middle of the Ocean</h2>
+  
+    <div class="video-embed-container">
+      <iframe class="video-embed" src="https://www.youtube.com/embed/D4HKAy-QrAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   
+
+  
+    (<a href="https://www.youtube.com/watch?v=DEexkKAn8MM">Behind the scenes</a>)
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>Lil' $ond@e</h2>
+  
+    <div class="video-embed-container">
+      <iframe class="video-embed" src="https://www.youtube.com/embed/IZzQWeLo95U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   
+
+  
+    (<a href="https://www.youtube.com/watch?v=f_9_JkKLXUA">Behind the scenes</a>)
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>It's Going to be Surreal</h2>
+  
+    <div class="video-embed-container">
+      <iframe class="video-embed" src="https://www.youtube.com/embed/5G9Eg5DoeM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+   
+
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>We have the room</h2>
+  
+    <a href="https://www.youtube.com/watch?v=F5SP9RYFiPc">
+        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/F5SP9RYFiPc/sddefault.jpg">
+    </a>
+   
+
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>Pizza Party</h2>
+  
+    <a href="https://www.youtube.com/watch?v=UWLsIRb7ces">
+        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/UWLsIRb7ces/sddefault.jpg">
+    </a>
+   
+
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>Good Boy</h2>
+  
+    <a href="https://www.youtube.com/watch?v=f-t7wkGXrhA">
+        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/f-t7wkGXrhA/sddefault.jpg">
+    </a>
+   
+
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>The Making of DogCat</h2>
+  
+    <a href="https://www.youtube.com/watch?v=IhymhJMDYYI">
+        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/IhymhJMDYYI/sddefault.jpg">
+    </a>
+   
+
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>The TNR Players Present "Famous"</h2>
+  
+    <a href="https://www.youtube.com/watch?v=QR6GzbAZuog">
+        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/QR6GzbAZuog/sddefault.jpg">
+    </a>
+   
+
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>The Plight of the Peppers</h2>
+  
+    <a href="https://www.youtube.com/watch?v=PcFbpkZLJmg">
+        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/PcFbpkZLJmg/sddefault.jpg">
+    </a>
+   
+
+  
+
+  </div>
+
+  <div class="video-container">
+ 
+  <h2>The Life and Times of TNR</h2>
+  
+    <a href="https://www.youtube.com/watch?v=-pIYxLGn-VQ">
+        <img class="video-thumbnail" width="100%" src="https://img.youtube.com/vi/-pIYxLGn-VQ/sddefault.jpg">
+    </a>
+   
+
+  
+
+  </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

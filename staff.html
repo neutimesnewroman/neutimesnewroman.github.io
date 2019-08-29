@@ -1,27 +1,389 @@
----
-title: Staff
----
+<html>
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#666666">
+<meta name="theme-color" content="#ffffff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<meta charset="utf-8">
+<title>Staff</title>
 
-{% assign eboard = site.staff | where: "group", "eboard" | sort: "positionnumber"  %}
-{% assign others = site.staff | where: "group", "other" %}
-{% assign founders = site.staff | where: "group", "founder" %}
+<head>
+    <link rel="stylesheet" href="/assets/css/site.css">
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand" style="color:#FF0000">Times New Roman</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+            <ul class="nav navbar-nav">
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/staff.html">Staff</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/issues.html">Issues</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/blog.html">Blog</a>
+                </li>
+                
+
+                <li class="nav-item">
+                    <a class="nav-link" href="/videos.html">Videos</a>
+                </li>
+                
+            </ul>
+            <ul class="nav navbar-nav">
+                <li>
+                    
+                    <a href="https://twitter.com/neutnr"><img src="/assets/img/logos/twitter_logo_white.png" class="logo"></a>
+                    
+                    <a href="https://facebook.com/neutnr"><img src="/assets/img/logos/facebook_logo.png" class="logo"></a>
+                    
+                    <a href="https://instagram.com/neutnr"><img src="/assets/img/logos/instagram_logo.png" class="logo"></a>
+                    
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+    <div class="container" id="container">
+
+
+        <div id="content" style="padding-top:25px">
+            
+
+
 
 <h3 style="margin-bottom:30px">Meet Our Executive Board!</h3>
     
-    {% for staff in eboard %}
-        {% include staff_box.html staff=staff %}
-    {% endfor %}
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/dancarr.jpg" />
+        <h5><a href="/staff/dancarr.html">Dan Carr</a></h5>
+        <p>
+            <b>Editor in Chief</b>, Actor, Former Child
+            
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The Leader</h5>
+        <p><p>Despite not having a beard, Dan has secured 
+his second term as Supreme Leader. Beardless, 
+fearless, and beautiful, Dan writes hilarious emails,
+communicates with our bureaucratic overlords, and is 
+actually on OrgSync! When he’s not 
+dealing swift justice to staff writers, he enjoys 
+taking long walks, walking take longs, and longing walk takes.</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/rowanvanlare.jpg" />
+        <h5><a href="/staff/rowanvanlare.html">Rowan Van Lare</a></h5>
+        <p>
+            <b>Head of Writing</b>, Former Child Actor
+            
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The Real Leader</h5>
+        <p><p>Despite having a beard, Rowan brings the sex appeal 
+to all Times New Roman meetings and events. Some 
+say she’s just the Head of Writing, 
+but people in the know know that she’s 
+a whole lot more. When she’s not 
+writing love poems to her third grade English teacher, 
+she enjoys fantasizing about her third grade English teacher.</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/maddiekelly.jpg" />
+        <h5><a href="/staff/maddiekelly.html">Maddie Kelly</a></h5>
+        <p>
+            <b>Head of Design</b>, Remover of Signs
+            
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The Backbone</h5>
+        <p><p>“Yeah my last name is a first name. 
+What are you gonna do about it?”</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/willyunterkoefler.jpg" />
+        <h5><a href="/staff/willyunterkoefler.html">Willy Unterkoefler</a></h5>
+        <p>
+            <b>Head of Communication</b>, Sort of
+            
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The Communicator</h5>
+        <p><p>But why does Dan send all the emails then?</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/benharrold.jpg" />
+        <h5><a href="/staff/benharrold.html">Ben Harrold</a></h5>
+        <p>
+            <b>Head of Video</b>, Has a Head
+            
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The Video Guy</h5>
+        <p><p>Ben also sings, dances and cartwheels. When he’s
+not singing, dancing and cartwheeling,
+he’s not having any fun.</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/emilywharmby.jpg" />
+        <h5><a href="/staff/emilywharmby.html">Emily Wharmby</a></h5>
+        <p>
+            <b>Treasurer</b>, Treasured Forever
+            
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The Money</h5>
+        <p><p>And why we can’t afford pizza at our 
+meetings anymore.</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/delaneybien.jpg" />
+        <h5><a href="/staff/delaneybien.html">Delaney Bien</a></h5>
+        <p>
+            <b>Student Representative</b>, Oat Milk Drinker
+            
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The Oat Milker</h5>
+        <p><p>Needlessly proud valedictorian of her Eighth Grade Class. Was 
+unable to spell valedictorian at that time. Still unsure 
+of how to spell valedictorian and has googled it three 
+times while writing this. Now temporarily aware of how 
+to spell valedictorian. Also intolerant of lactose. Some 
+believe she is lactose intolerant. Rather than cows, 
+Delaney milks oats.</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
+        
+<div class="row">
+
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/jakemohamed.jpg" />
+        <h5><a href="/staff/jakemohamed.html">Jake Mohamed</a></h5>
+        <p>
+            <b>King</b>
+        </p>
+    </div>
+    
+    <div class="col-lg-5">
+        <h5>The King</h5>
+        <p><p>Jake Mohamed, The Bearded, First of His Name,
+King of Times New Roman, Arbiter of Truth,
+Dispenser of Wisdom, Writer of Articles,
+Winner of Movie Fests, Spreader of Peanut Butter,
+Licker of Jelly, Maker of Sandwiches
+The Unelected. May He Live Forever.</p>
+</p>
+    </div>
+    
+
+</div>
+
+
+    
 <hr />
 
 <h3 style="margin-bottom:30px">Meet Some Other People Who Sometimes Show Up!</h3>
     <div class="row">
-    {% for staff in others %}
-        {% include staff_box.html staff=staff %}
-    {% endfor %} 
+    
+        
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="/assets/img/staff/defaultprofile.png" />
+        <h5><a href="/staff/claudiahurtado.html">Claudia Hurtado</a></h5>
+        <p>
+            <b>Former Treasurer</b>
+        </p>
+    </div>
+    
+
+
+    
+        
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/danielmelcer.png" />
+        <h5><a href="/staff/danielmelcer.html">Daniel Melcer</a></h5>
+        <p>
+            <b>Former Deputy Head of Communication</b>
+        </p>
+    </div>
+    
+
+
+    
+        
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/kevindunne.jpg" />
+        <h5><a href="/staff/kevindunne.jpg">Kevin Dunne</a></h5>
+        <p>
+            <b>Deputy Head of Something</b>
+        </p>
+    </div>
+    
+
+
+    
+        
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/liorzippel.jpg" />
+        <h5><a href="/staff/liorzippel.html">Lior Zippel</a></h5>
+        <p>
+            <b>Deputy Head of Communication</b>
+        </p>
+    </div>
+    
+
+
+    
+        
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="https://static1.nutnr.com/img/staff/mareyaesperanza.jpg" />
+        <h5><a href="/staff/mareyaesperanza.html">Mareya Esperanza</a></h5>
+        <p>
+            <b>Former Head of Design</b>
+        </p>
+    </div>
+    
+
+
+    
+        
+    <div class="col-lg-4">
+        <img class="picture-list-profile-picture" src="/assets/img/staff/defaultprofile.png" />
+        <h5><a href="/staff/sanyamittal.html">Sanya Mittal</a></h5>
+        <p>
+            <b>Former Representative</b>
+        </p>
+    </div>
+    
+
+
+     
     </div>
 <hr />
 
 <h3 style="margin-bottom:30px">Meet Our Founders</h3>
-    {% for staff in founders %}
-        {% include staff_box.html staff=staff %}
-    {% endfor %} 
+     
+
+        </div>
+    </div>
+</body>
+
+</html>
