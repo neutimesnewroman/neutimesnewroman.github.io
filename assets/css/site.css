@@ -62,6 +62,14 @@
 
 .blog-image { width: 100%; margin-bottom: 10px; }
 
+.recentpost-content { display: flex; flex-wrap: nowrap; }
+
+.recentpost-content-thumbnail-container { padding-right: 8px; }
+
+.recentpost-content-text { flex-grow: 1; }
+
+.article-thumbnail-picture { display: block; object-fit: cover; width: 100px; height: 100px; }
+
 body { background-color: #444; }
 
 #container { background-color: white; }
