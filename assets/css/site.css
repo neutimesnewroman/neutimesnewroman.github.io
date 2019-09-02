@@ -30,11 +30,15 @@
 
 .staff-box-container { display: flex; flex-wrap: wrap; }
 
-.staff-box-spacer { width: 16px; height: 0px; flex-shrink: 0; }
+.spacer { width: 16px; height: 0px; flex-shrink: 0; }
 
 .staff-box-left-container { flex: 0 0 250px; }
 
 .staff-box-right-container { flex: 1 1 300px; min-width: 300px; }
+
+.other-staff-container { margin-bottom: 30px; }
+
+.other-staff-faces-container { display: flex; flex-wrap: wrap; justify-content: space-between; }
 
 .full-width, .video-embed-container, .video-embed, .video-thumbnail { width: 100%; }
 
