@@ -30,7 +30,7 @@
 
 .issue-grid-layout { display: flex; flex-wrap: wrap; flex-direction: row; justify-content: center; }
 
-.issue-grid-picture-container { width: 300px; height: 388px; padding: 5px; filter: none; transition: 0.4s; }
+.issue-grid-picture-container { width: 300px; height: 388px; overflow: hidden; padding: 5px; filter: none; transition: 0.4s; }
 
 @media only screen and (max-width: 500px) { .issue-grid-picture-container { width: 200px; height: 259px; } }
 
